@@ -6,11 +6,19 @@
     xmlns:local="clr-namespace:BottomTabbarTopShadow"
     Shell.FlyoutBehavior="Disabled"
     Title="BottomTabbarTopShadow">
-
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+       <Tab Title="Domestic"
+            Icon="dotnet_bot.png">
+           <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+       </Tab>
+       <Tab Title="Monkeys"
+            Icon="dotnet_bot.png">
+           <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+       </Tab>
+    </TabBar>
 
 </Shell>
 
